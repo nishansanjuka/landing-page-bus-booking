@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Change the background color of the selected text */
+::selection {
+    background-color: #e29f0e; /* Change this to the color you want */
+    color: #ffffff; /* Change this to the text color you want */
+}
+  
+  /* Change the background color of the selected text for Firefox */
+::-moz-selection {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+#register-form{
+    background-image: url("/assets/men.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sign-in {
+    background-image: url("/assets/bus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+}
+
+.top-to-bottom{
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: anim-top-to-bottom 1s .3s forwards;
+}
+
+@keyframes anim-top-to-bottom{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: anim-fade-in 1s 1s forwards;
+}
+
+@keyframes anim-fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fade-in-late{
+    opacity: 0;
+    animation: anim-fade-in-late 1s 1.5s forwards;
+}
+
+@keyframes anim-fade-in-late{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
