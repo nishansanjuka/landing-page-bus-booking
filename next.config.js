@@ -2,8 +2,9 @@
 
 const nextConfig = {
     output:'export',
-    basePath:'/landing-page-bus-booking',
-    assetPrefix:"/landing-page-bus-booking/"
+    images:{
+        unoptimized:true
+    }
 }
 
 module.exports = nextConfig

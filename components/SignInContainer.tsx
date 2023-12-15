@@ -10,7 +10,7 @@ export default function SignInContainer() {
 
     useEffect(() => {
         const backgroundImage = new Image();
-        backgroundImage.src = "/assets/bus.jpg"
+        backgroundImage.src = "assets/bus.jpg"
 
         backgroundImage.onload = () => {
         setTimeout(() => {
